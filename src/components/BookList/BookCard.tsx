@@ -31,7 +31,7 @@ const BookCard: React.FC<BookCardProps> = ({book, index}) => {
                     <QRCode
                         size={256}
                         style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                        value={'https://'+window.location.host+'/'+book.isbn}
+                        value={'https://'+window.location.host+'/book/'+book.isbn}
                         viewBox={`0 0 256 256`}
                     />
                 </div>
