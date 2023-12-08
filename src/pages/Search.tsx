@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import useBookManagement from '../booksManagementHook';
 
-const books:any=[];
 
 const Search = () => {
   const search = useLocation().search;
@@ -21,6 +20,7 @@ const Search = () => {
         setBooks(res);
       })
       .catch(err=>{
+        console.log(err);
         alert("OOPS! couldnt search books")
       })
     }

@@ -77,11 +77,15 @@ const BookPageContent: React.FC<BookPageContentProps> = ({book, editBook, remove
     }
     return (
         <div className={`${styles.bookPage}`}>
-            <Image
-                src={book.coverImage}
-                alt={book.bookName}
-                className={styles.image}
-            />
+            {
+                book.coverImage && book.bookName && (
+                    <Image
+                        src={book.coverImage}
+                        alt={book.bookName}
+                        className={styles.image}
+                    />
+                )
+            }
             <Container className='position-relative'>
                 <div className={styles.iconsContainer}>
                     <button onClick={del}>

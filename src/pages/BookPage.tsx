@@ -23,6 +23,7 @@ const BookPage = () => {
                 setBook(res);
             })
             .catch(err=>{
+                console.log(err);
                 setIsError(true);
             })
         }    

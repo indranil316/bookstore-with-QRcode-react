@@ -141,7 +141,7 @@ const useBookManagement = () => {
     });
   const searchBooks = (key: string): Promise<Book[]> => {
     key=key.toLowerCase();
-    return new Promise((resolve, reject)=>{
+    return new Promise((resolve)=>{
       const newBooks: Book[] = books.filter(book => {
         if(book.bookName.toLowerCase().includes(key) || book.isbn.toLowerCase().includes(key)){
           return book;
