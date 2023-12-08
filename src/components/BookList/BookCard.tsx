@@ -12,7 +12,7 @@ interface BookCardProps{
 const BookCard: React.FC<BookCardProps> = ({book, index}) => {
     const colorClass = index%2===0 ? 'hawkesBlue' : 'roseWhite';
     return (
-        <Link to={'book/'+book.isbn} className={`d-flex position-relative ${styles.bookCard} ${styles[colorClass]}`}>
+        <Link to={'/book/'+book.isbn} className={`d-flex position-relative ${styles.bookCard} ${styles[colorClass]}`}>
             {
                 book.coverImage ? (
                     <Image
