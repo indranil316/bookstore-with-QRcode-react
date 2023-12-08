@@ -1,0 +1,26 @@
+@import '../../styles/common';
+
+.image{
+    border-radius: 35%;
+    @include desktop{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.searchBar{
+    height: 42px;
+    border-radius: 10px;
+    @include desktop{
+        height: 60px;
+    }
+}
+.headerDecor{
+    top: -20px;
+    right: -85px;
+    z-index: 1;
+}
+.higherIndex{
+    position: relative;
+    z-index: 2;
+}

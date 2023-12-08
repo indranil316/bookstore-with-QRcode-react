@@ -1,0 +1,19 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/slick-carousel/slick/slick.scss';
+@import 'node_modules/slick-carousel/slick/slick-theme.scss';
+@import 'common';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $poppins;
+    overflow-x: hidden;
+}
+#root{
+    overflow-x: hidden;
+}
+img{
+    flex-shrink: 0;
+}

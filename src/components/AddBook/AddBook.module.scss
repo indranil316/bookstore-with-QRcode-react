@@ -1,0 +1,17 @@
+@import '../../styles/common';
+
+.btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 20px 0 40px 0;
+    padding: 0;
+    background-color: $portage;
+    color: whitesmoke;
+    padding: 12px 16px;
+    font-size: x-large;
+    transition: 0.5s all ease;
+    &:hover{
+        background-color: $hawkes-blue;
+    }
+}
