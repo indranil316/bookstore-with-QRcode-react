@@ -83,6 +83,8 @@ const BookPageContent: React.FC<BookPageContentProps> = ({book, editBook, remove
                         src={book.coverImage}
                         alt={book.bookName}
                         className={styles.image}
+                        width={240}
+                        height={320}
                     />
                 )
             }

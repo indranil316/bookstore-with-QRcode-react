@@ -46,7 +46,7 @@ var allbooks: Book[] = [
     isFavourite: true
   },
   {
-    bookName: "Mindful Living",
+    bookName: "Mindful Lifestyles",
     isbn: "978-0349427351",
     category: "Self-Help",
     rowNo: 4,

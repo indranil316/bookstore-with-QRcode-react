@@ -12,7 +12,7 @@ interface ImageProps{
 
 const Image: React.FC<ImageProps> = ({src, width="auto", height="auto", alt, className="", styles={}}) => {
   return (
-    <LazyLoadImage src={src} width={width} height={height} alt={alt} className={className} style={styles}/>
+    <LazyLoadImage loading='lazy' src={src} width={width} height={height} alt={alt} className={className} style={styles}/>
   )
 }
 
