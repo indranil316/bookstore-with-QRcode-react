@@ -169,7 +169,7 @@ const BookPageContent: React.FC<BookPageContentProps> = ({book, editBook, remove
                     <QRCode
                         size={256}
                         style={{ height: "auto", maxWidth: "100%", width: "100%" }}
-                        value={'http://'+window.location.host+'/'+book.isbn}
+                        value={'https://'+window.location.host+'/'+book.isbn}
                         viewBox={`0 0 256 256`}
                     />
                 </div>
